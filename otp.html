@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verify email address</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body class="font-primary">
+    <section>
+      <div class="h-screen">
+        <div
+          class="bg-contain bg-no-repeat w-full h-[280px] sm:mx-auto sm:w-full sm:max-w-md max-[415px]:bg-cover"
+          style="background-image: url('./img/background-2.png')"
+        >
+          <div class="pl-9 pt-16 max-w-[433px]">
+            <img src="./img/logo.png" alt="logo" />
+            <div class="pt-8 text-white">
+              <h1 class="text-2xl font-medium">Verify email address</h1>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex px-5 items-center justify-evenly text-[15px] text-[#afafaf]" id="msg"
+        >
+          <div>
+            When you click on the verify button, you will receive an OTP that
+            will help us to verify your email address.
+          </div>
+          <button
+            onclick="set_visible()"
+            class="bg-gradient text-white rounded-full px-3 py-1 justify-end cursor-pointer"
+          >
+            Verify
+          </button>
+        </div>
+        <div class="px-5 hidden" id="otp">
+          <div class="mb-7 text-[15px] text-[#afafaf]">
+            We have sent an OTP to pqr@gmail.com. Please enter it below to
+            verify your email address.
+          </div>
+          <div class="mb-5 flex justify-center">
+            <input
+              id="otp-input-1"
+              type="text"
+              maxlength="1"
+              class="w-[40px] mr-3 px-3 py-2 border border-[#afafaf] border-1 rounded-xl"
+            />
+            <input
+              id="otp-input-2"
+              type="text"
+              maxlength="1"
+              class="w-[40px] mr-3 px-3 py-2 border border-[#afafaf] border-1 rounded-xl"
+            />
+            <input
+              id="otp-input-3"
+              type="text"
+              maxlength="1"
+              class="w-[40px] mr-3 px-3 py-2 border border-[#afafaf] border-1 rounded-xl"
+            />
+            <input
+              id="otp-input-4"
+              type="text"
+              maxlength="1"
+              class="w-[40px] mr-3 px-3 py-2 border border-[#afafaf] border-1 rounded-xl"
+            />
+          </div>
+        </div>
+        <div class="w-full absolute bottom-10 justify-between px-3 hidden" id="submit-btn">
+          <button class="bg-slate-300 px-4 py-2 text-[#585858] rounded-full ml-5">
+            Cancel
+          </button>
+
+          <button class="bg-gradient px-4 py-2 text-white rounded-full mr-4">
+            Submit
+          </button>
+        </div>
+      </div>
+    </section>
+    <script>
+      function set_visible() {
+        document.getElementById("otp").style.display = "block";
+        document.getElementById("submit-btn").style.display = "flex";
+        document.getElementById("msg").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

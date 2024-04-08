@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+    <div class='flex flex-col gap-2 font-primary items-center justify-center min-h-screen'>
+        <!-- header background section -->
+        <div class="bg-cover bg-center bg-no-repeat w-screen h-[280px] min-w-screen fixed top-0"
+            style="background-image: url('./img/background-2.png')">
+            <div class="flex justify-center items-center pt-[48px]">
+                <img src="./img/logo.png" alt="logo" class='' />
+            </div>
+        </div>
+
+        <div class="mt-[200px] flex flex-col items-center h-screen mx-2">
+            <!-- post component -->
+            <div id="cards" class="overflow-y-auto py-5 flex flex-col items-center space-y-[28px] px-2"
+                style="max-height: calc(100vh - 360px);">
+                <div class="card rounded-[40px] p-5" style="box-shadow: 0px 2px 6px 0px #00000040">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center justify-between">
+                            <img src="./img/usersm.png" alt="" />
+                            <div class="pl-[9px]">
+                                <h1 class="text-[15px] font-medium" style="
+                        background: linear-gradient(
+                          180deg,
+                          #ff6535 0%,
+                          #ff9e48 48.9%,
+                          #ffce58 100%
+                        );
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                      ">
+                                    Name
+                                </h1>
+                                <p class="text-[11px] font-normal text-[#2c2c2c]">
+                                    6 hours ago
+                                </p>
+                            </div>
+                        </div>
+
+                        <button><img src="./img/report.png" class="w-6 h-8" alt="" /></button>
+                    </div>
+                    <div class="flex flex-col gap-2 pt-[10px]">
+                        <h2 class="text-[14px] font-normal" style="
+                    background: linear-gradient(
+                      180deg,
+                      #ff6535 0%,
+                      #ff9e48 48.9%,
+                      #ffce58 100%
+                    );
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                  ">
+                            Category/ Sub-category
+                        </h2>
+                        <h1 style="
+                    background: linear-gradient(
+                      180deg,
+                      #ff6535 0%,
+                      #ff9e48 48.9%,
+                      #ffce58 100%
+                    );
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                  " class="text-[15px] font-medium">
+                            Title
+                        </h1>
+                        <img src="./img/postdemo.jpg" class="rounded-lg bg-contain">
+                        <p class="text-[11px] font-normal text-[#585858] pb-[10px]">
+                            Gorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nunc vulputate libero et velit interdum, ac aliquet odio
+                            mattis. Class aptent taciti sociosqu ad litora torquent per
+                            conubia nostra, per inceptos himenaeos. Curabitur tempus
+                            urna at turpis condimentum lobortis.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-start">
+                        <div class="flex items-center pr-[15px]">
+                            <img src="./img/lk.png" alt="" />
+                            <p class="pl-[6px] text-[11px] font-normal" style="
+                      background: linear-gradient(
+                        180deg,
+                        #ff6535 0%,
+                        #ff9e48 48.9%,
+                        #ffce58 100%
+                      );
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                    ">
+                                2365
+                            </p>
+                        </div>
+                        <div class="flex items-center pr-[15px]">
+                            <img src="./img/com.png" alt="" />
+                            <p class="pl-[6px] text-[11px] font-normal" style="
+                      background: linear-gradient(
+                        180deg,
+                        #ff6535 0%,
+                        #ff9e48 48.9%,
+                        #ffce58 100%
+                      );
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                    ">
+                                1325
+                            </p>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="./img/share.png" alt="" />
+                            <p class="pl-[6px] text-[11px] font-normal" style="
+                      background: linear-gradient(
+                        180deg,
+                        #ff6535 0%,
+                        #ff9e48 48.9%,
+                        #ffce58 100%
+                      );
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                    ">
+                                125
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-[40px] p-5 mb-6" style="box-shadow: 0px 2px 6px 0px #00000040">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center justify-between">
+                            <img src="./img/usersm.png" alt="" />
+                            <div class="pl-[9px]">
+                                <h1 class="text-[15px] font-medium" style="
+                        background: linear-gradient(
+                          180deg,
+                          #ff6535 0%,
+                          #ff9e48 48.9%,
+                          #ffce58 100%
+                        );
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                      ">
+                                    Name
+                                </h1>
+                                <p class="text-[11px] font-normal text-[#2c2c2c]">
+                                    6 hours ago
+                                </p>
+                            </div>
+                        </div>
+
+                        <button><img src="./img/report.png" class="w-6 h-8" alt="" /></button>
+                    </div>
+                    <div class="pt-[10px]">
+                        <h2 class="text-[14px] font-normal" style="
+                    background: linear-gradient(
+                      180deg,
+                      #ff6535 0%,
+                      #ff9e48 48.9%,
+                      #ffce58 100%
+                    );
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                  ">
+                            Category/ Sub-category
+                        </h2>
+                        <h1 style="
+                    background: linear-gradient(
+                      180deg,
+                      #ff6535 0%,
+                      #ff9e48 48.9%,
+                      #ffce58 100%
+                    );
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                  " class="text-[15px] font-medium">
+                            Title
+                        </h1>
+                        <p class="text-[11px] font-normal text-[#585858] pb-[10px]">
+                            Gorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nunc vulputate libero et velit interdum, ac aliquet odio
+                            mattis. Class aptent taciti sociosqu ad litora torquent per
+                            conubia nostra, per inceptos himenaeos. Curabitur tempus
+                            urna at turpis condimentum lobortis.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-start">
+                        <div class="flex items-center pr-[15px]">
+                            <img src="./img/lk.png" alt="" />
+                            <p class="pl-[6px] text-[11px] font-normal" style="
+                      background: linear-gradient(
+                        180deg,
+                        #ff6535 0%,
+                        #ff9e48 48.9%,
+                        #ffce58 100%
+                      );
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                    ">
+                                2365
+                            </p>
+                        </div>
+                        <div class="flex items-center pr-[15px]">
+                            <img src="./img/com.png" alt="" />
+                            <p class="pl-[6px] text-[11px] font-normal" style="
+                      background: linear-gradient(
+                        180deg,
+                        #ff6535 0%,
+                        #ff9e48 48.9%,
+                        #ffce58 100%
+                      );
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                    ">
+                                1325
+                            </p>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="./img/share.png" alt="" />
+                            <p class="pl-[6px] text-[11px] font-normal" style="
+                      background: linear-gradient(
+                        180deg,
+                        #ff6535 0%,
+                        #ff9e48 48.9%,
+                        #ffce58 100%
+                      );
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                    ">
+                                125
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filter posts (This will open when the filter icon beside creat post input is clicked)-->
+            <div class="flex flex-col w-full items-center fixed bottom-36 left-0 mt-[-70px] bg-white rounded-lg">
+                <h1 class="text-[20px] font-semibold text-left self-start ml-4"
+                    style="background: linear-gradient(180deg, #ff6535 0%, #ff9e48 48.9%, #ffce58 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    Filter Posts:
+                </h1>
+                <div class="flex items-center mt-1 mx-2">
+                    <div
+                        class="flex items-center justify-between px-2 py-1 border border-orange-500 rounded-full w-full mr-2">
+                        <div class="relative w-1/2">
+                            <select
+                                class="focus:outline-none bg-no-repeat text-md text-gradient font-semibold w-full py-2 rounded-md">
+                                <option value="" class="w-full text-gradient">Category</option>
+                                <option value="Preschool">Preschool/Kindergarten</option>
+                                <option value="Middle School">Middle School</option>
+                                <option value="High School">High School</option>
+                                <option value="Vocational Trainings/ Job Oriented Training">Vocational
+                                    Trainings/ Job Oriented Training</option>
+                                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                            </select>
+                        </div>
+                        <div class="relative w-1/2">
+                            <select
+                                class="focus:outline-none py-2 w-full text-gradient font-semibold text-md bg-no-repeat rounded-md">
+                                <option value="" class="w-fit">Subcategory</option>
+                                <option class="w-screen">Reading</option>
+                                <option class="w-screen">Writing</option>
+                                <option class="w-screen">Rhymes</option>
+
+                            </select>
+
+                        </div>
+                    </div>
+                    <img src="./img/check.png" alt="" class="w-8 h-10 cursor-pointer" />
+                </div>
+            </div>
+
+            <!-- Filter Tags (The selected category and subcategory from filters will be shown here)-->
+            <div class="fixed top-[150px] flex items-center justify-center">
+                <div class="rounded-full px-2 py-[10px] flex justify-center items-center bg-white mr-5 shadow-md">
+                    <p class="pr-2 text-[15px] font-medium"
+                        style="background: linear-gradient(180deg, #ff6535 0%, #ff9e48 48.9%, #ffce58 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                        High School
+                    </p>
+                    <img src="./img/x.png" alt="" />
+                </div>
+                <div class="rounded-full px-2 py-[10px] flex items-center bg-white shadow-md">
+                    <p class="pr-2 text-[15px] font-medium"
+                        style="background: linear-gradient(180deg, #ff6535 0%, #ff9e48 48.9%, #ffce58 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                        Maths
+                    </p>
+                    <img src="./img/x.png" alt="" />
+                </div>
+            </div>
+
+            <!-- New post create input -->
+            <div class="flex justify-center items-center fixed left-0 bottom-20 gap-1 px-4 w-full mb-2">
+
+                <div class="relative flex w-full">
+                    <span class="absolute inset-y-0 flex items-center">
+                        <button type="button"
+                            class="inline-flex items-center justify-center rounded-full h-12 w-12 transition duration-500 ease-in-out text-gray-500 focus:outline-none"
+                            style="
+                    background: linear-gradient(
+                      180deg,
+                      #ff6535 0%,
+                      #ff9e48 48.9%,
+                      #ffce58 100%
+                    );
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                  ">
+                            <img src="./img/wri.png" alt="" />
+                        </button>
+                    </span>
+
+                    <div class="p-[1px] rounded-full w-full mr-1 input-wrap">
+                        <input type="text" placeholder="Create a post"
+                            class="w-full rounded-full focus:outline-none text-sm focus:placeholder-[#afafaf] text-[#afafaf] placeholder-[#afafaf] pl-12 bg-white border border-orange-400 py-3" />
+                    </div>
+                </div>
+                <!-- <button type="button" class="mx-2 w-[22px] h-[20px]">
+                    <img src="./img/icons 3.png" alt="" class="w-[22px] h-[20px]" />
+                </button> -->
+                <button type="button" class="w-[28px] h-[25px]">
+                    <img src="./img/filter.png" alt="" class="w-[28px] h-[25px]" />
+                </button>
+            </div>
+            <form method='POST'
+                class="w-full fixed top-0 left-0 z-50  h-full flex justify-center items-center bg-black bg-opacity-50">
+                <div class="bg-white p-6 rounded-lg w-11/12">
+                    <h2 class="text-[20px] font-semibold mb-4 text-gradient">Create Post</h2>
+                    <input type="text" placeholder="Post Title"
+                        class="mb-2 w-full border border-gray-300 rounded-md p-2 focus:outline-none" />
+                    <textarea name="" id="" placeholder="Content"
+                        class="mb-2 w-full border border-gray-300 rounded-md p-2 focus:outline-none"
+                        rows="4"></textarea>
+                    <select class="mb-2 w-full border border-gray-300 rounded-md p-2 focus:outline-none">
+                        <option value="" selected disabled>Select Category</option>
+                        <!-- Categories options here -->
+                        <option value="Preschool">Preschool/Kindergarten</option>
+                        <option value="Middle School">Middle School</option>
+                        <option value="High School">High School</option>
+                        <option value="Vocational Trainings/ Job Oriented Training">Vocational
+                            Trainings/ Job Oriented Training</option>
+                        <option value="Bachelor's Degree">Bachelor's Degree</option>
+                    </select>
+
+                    <select class="mb-2 w-full border border-gray-300 rounded-md p-2 focus:outline-none">
+                        <option value="" selected disabled>Select a course</option>
+                        <!-- Categories options here -->
+                        <option value="Preschool">Preschool/Kindergarten</option>
+                        <option value="Middle School">Middle School</option>
+                        <option value="High School">High School</option>
+                        <option value="Vocational Trainings/ Job Oriented Training">Vocational
+                            Trainings/ Job Oriented Training</option>
+                        <option value="Bachelor's Degree">Bachelor's Degree</option>
+                    </select>
+
+                    <div class='flex flex-col gap-2'>
+                        <input type="file" accept="image/*"
+                            class="border border-gray-300 px-2 py-2 text-gray-400 text-left rounded-md" />
+                        <div class='flex flex-row items-center'>
+                            <button type="submit" class="text-white px-4 py-2 rounded-md bg-gradient">Create</button>
+
+                            <button type="button"
+                                class="bg-gray-200 text-gray-800 px-4 py-2 rounded-md ml-2">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+        </form>
+        <!-- Menu bottom -->
+        <div style="
+              background: linear-gradient(
+                180deg,
+                #ff6535 0%,
+                #ff9e48 48.9%,
+                #ffce58 100%
+              );
+              position: fixed;
+              bottom: 0;
+              
+            "
+            class="flex flex-row justify-between shadow-md items-center px-[32px] rounded-[100px] w-11/12 h-[64px] mb-3">
+            <img src="./img/search.png" alt="">
+            <img src="./img/4.png" alt="" />
+            <img src="./img/chat-inactive.png" alt="" />
+            <img src="./img/doti.png" />
+        </div>
+    </div>
+
+    <script>
+        const el = document.getElementById("cards");
+        el.scrollTop = el.scrollHeight;
+    </script>
+
+    </div>
+</body>
+
+</html>

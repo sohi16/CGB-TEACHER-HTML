@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="font-primary">
+    <section>
+        <div>
+            <!-- header background section -->
+            <div class="bg-cover bg-center bg-no-repeat w-screen h-[280px] min-w-screen fixed top-0"
+                style="background-image: url('./img/background-2.png')">
+                <div class="flex justify-center items-center pt-[48px]">
+                    <img src="./img/logo.png" alt="logo" class='' />
+                </div>
+            </div>
+            <div class="flex flex-col items-center mt-80 sm:mx-auto sm:w-full sm:max-w-[480px]">
+                <!-- component -->
+                <div class="mt-[-130px] flex flex-col w-full">
+                    <div class="fixed right-0 left-0 w-full">
+                        <div class="flex flex-col justify-center items-center ">
+                            <img src="./img/Vector (1).png" alt="" />
+                            <h1 class="font-semibold text-2xl text-[#585858]">Name</h1>
+                            <p class="text-[#afafaf] text-sm font-normal">Student</p>
+                        </div>
+                        <div class="flex items-center justify-center px-[15px] mt-4 pb-[20px] shadow-md rounded-b-full">
+                            <a href="#personal"
+                                class="shadow-md text-white py-2 px-4 rounded-full mr-3 bg-gradient btn-toggle active"
+                                onclick="toggleForm('personal',this)">
+                                Personal Details
+                            </a>
+                            <a href="#education"
+                                class="shadow-md text-white py-2 px-4 rounded-full mr-3 bg-gradient btn-toggle"
+                                onclick="toggleForm('education',this)">
+                                Education
+                            </a>
+                           
+                        </div>
+                    </div>
+                    <div class="overflow-y-auto mt-[200px] grid grid-cols-1 gap-x-2 gap-y-4 sm:grid-cols-6 px-2"
+                        style="max-height: calc(100vh - 500px);">
+                        <div class="personal" id="personal">
+                            <div class="mt-2 grid grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-6 px-2">
+                                <div class="sm:col-span-6">
+                                    <label for="full-name"
+                                        class="block text-sm font-semibold leading-2 text-gradient pl-[14px]">Full Name
+                                        *</label>
+                                    <div class="mt-2">
+                                        <input type="text" name="fullName" autoComplete="given-name"
+                                            class="block w-full rounded-m border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
+                                            value="" />
+                                    </div>
+                                </div>
+
+                                <div class="sm:col-span-6">
+                                    <div class="flex justify-between">
+                                        <label for="email"
+                                            class="text-sm font-semibold leading-2 text-gradient pl-[14px]">Email
+                                            address *</label>
+                                        <div class="flex text-gradient text-[14px] font-semibold">
+                                            <a href="" class="mr-2">Verify now</a>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <input name="email" type="email" disabled autoComplete="email"
+                                            placeholder="xyz@email.com"
+                                            class="w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
+                                            value="" />
+                                    </div>
+                                </div>
+
+                                <div class="sm:col-span-6">
+                                    <div class="flex items-center justify-between flex-col min-[375px]:flex-row">
+                                        <div class="sm:col-span-3 w-[100%] sm:w-[50%] mr-2">
+                                            <label for="country"
+                                                class="block text-sm font-semibold leading-2 text-gradient pl-[14px]">Country
+                                                *</label>
+                                            <div class="mt-2 relative">
+                                                <input name="country" type="text" autoComplete="country-name"
+                                                    list="countries"
+                                                    class="appearance-none w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
+                                                    value="" />
+                                                <datalist id="countries"></datalist>
+                                            </div>
+                                        </div>
+                                        <div class="sm:col-span-3 w-[100%] sm:w-[50%]">
+                                            <label for="city"
+                                                class="text-sm font-semibold leading-2 text-gradient pl-[14px]">City</label>
+                                            <div class="mt-2 relative">
+                                                <input name="city" type="text" list="cities" autoComplete="city-name"
+                                                    class="appearance-none w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
+                                                    value="" />
+                                                <datalist id="cities"></datalist>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sm:col-span-6">
+                                    <label for="linkedin_profile"
+                                        class="text-sm font-semibold leading-2 text-gradient pl-[14px]">LinkedIn
+                                        profile</label>
+                                    <div class="mt-2">
+                                        <input name="linkedin_profile" type="url" autoComplete="url"
+                                            class="w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
+                                            value="" />
+                                    </div>
+                                </div>
+
+                                <div class="sm:col-span-6">
+                                    <label for="time_zone"
+                                        class="text-sm font-semibold leading-2 text-gradient pl-[14px]">Time Zone
+                                        *</label>
+                                    <div class="mt-2 relative">
+                                        <select name="time_zone"
+                                            class="w-full appearance-none border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
+                                            value="">
+                                            <option value="">Select Time Zone</option>
+                                        </select>
+                                        <img src="arrowIcon.svg" alt="" class="absolute top-[18px] right-[18px]" />
+                                    </div>
+                                </div>
+
+                                <div class="sm:col-span-6 mb-1">
+                                    <label for="about"
+                                        class="text-sm font-semibold leading-2 text-gradient pl-[14px]">About *</label>
+                                    <div class="mt-2">
+                                        <textarea name="about"
+                                            class="w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="h-px mb-1 mx-[15px] border-0 dark:bg-gray-700 opacity-25" />
+
+                            <div class="flex items-center justify-center mb-1">
+                                <a href=""
+                                    class="flex shadow-md text-white py-2 px-3 rounded-full items-center justify-center mr-2 bg-gradient">
+                                    <img src="./img/block.png" alt="" class="mr-2" />
+                                    <span class="text-[11px]">Change Password</span>
+                                </a>
+                                <div class="relative flex w-[160px]">
+                                    <input class="w-[100px] ml-3 mt-1" type="file" accept="image/*" id="file_input"
+                                        name="profilePic" />
+                                    <button
+                                        class="absolute flex shadow-md text-white py-2 px-3 rounded-full items-center justify-center bg-gradient">
+                                        <img src="./img/upload.png" alt="" class="mr-2" />
+                                        <span class="text-[11px]">Upload Profile Picture</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="education hidden" id="education">
+                            <form class="mt-2 grid grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-6 px-4">
+                                <div class="sm:col-span-6 text-sm">
+                                    <label for="category"
+                                        class="block font-semibold leading-6 text-gradient pl-4">Currently
+                                        Pursuing</label>
+
+                                    <div class="flex flex-col sm:flex-row justify-between">
+                                        <div class="w-full sm:w-1/2 mt-2 relative mr-4">
+                                            <select type="text" name="category" default="Select a category"
+                                                class="w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-4 py-3 appearance-none"
+                                                value=""
+                                                onChange="setFormData({...formData,category:e.target.value,subCategory:category_data[`${e.target.value}`]})">
+                                                <option value="" selected disabled>Select a course</option>
+                                                <!-- Categories options here -->
+                                                <option value="Preschool">Preschool/Kindergarten</option>
+                                                <option value="Middle School">Middle School</option>
+                                                <option value="High School">High School</option>
+                                                <option value="Vocational Trainings/ Job Oriented Training">Vocational
+                                                    Trainings/ Job Oriented Training</option>
+                                                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                                            </select>
+                                            <img src="./img/Vectoryy.png" alt=""
+                                                class="absolute top-[18px] right-[18px]" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sm:col-span-6 text-sm">
+                                    <div class="font-semibold leading-6 text-gradient pl-4">Select subcategories you are
+                                        pursuing</div>
+                                    <div class="px-3 flex flex-wrap items-center gap-1">
+                                        <label class="inline-flex items-center">
+                                            <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600" checked
+                                                name="option1">
+                                            <span class="ml-1 text-gray-700">Option 1</span>
+                                        </label>
+                                        <label class="inline-flex items-center">
+                                            <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600" checked
+                                                name="option2">
+                                            <span class="ml-1 text-gray-700">Option 2</span>
+                                        </label>
+                                        <label class="inline-flex items-center">
+                                            <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600" checked
+                                                name="option3">
+                                            <span class="ml-1 text-gray-700">Option 3</span>
+                                        </label>
+                                        <label class="inline-flex items-center">
+                                            <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600" checked
+                                                name="option4">
+                                            <span class="ml-1 text-gray-700">Option 4</span>
+                                        </label>
+                                        <label class="inline-flex items-center">
+                                            <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600" checked
+                                                name="option5">
+                                            <span class="ml-1 text-gray-700">Option 5</span>
+                                        </label>
+                                        <label class="inline-flex items-center">
+                                            <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600" checked
+                                                name="option6">
+                                            <span class="ml-1 text-gray-700">Option 6</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="sm:col-span-6 text-sm">
+                                    <label for="interest_category"
+                                        class="block font-semibold leading-6 text-gradient pl-4">Courses
+                                        Interested</label>
+
+                                    <div class="flex flex-col sm:flex-row justify-between">
+                                        <div class="mt-2 relative w-full mr-4">
+                                            <select name="interest_category" autoComplete="category-name"
+                                                class="appearance-none w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-4 py-3"
+                                                value=""
+                                                onChange="setFormData({...formData,interest_category:e.target.value,interest_subCategory:category_data[`${e.target.value}`]})">
+                                                <option value="" selected disabled>Select a course</option>
+                                                <!-- Categories options here -->
+                                                <option value="Preschool">Preschool/Kindergarten</option>
+                                                <option value="Middle School">Middle School</option>
+                                                <option value="High School">High School</option>
+                                                <option value="Vocational Trainings/ Job Oriented Training">Vocational
+                                                    Trainings/ Job Oriented Training</option>
+                                                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                                            </select>
+                                            <img src="./img/Vectoryy.png" alt=""
+                                                class="absolute top-[18px] right-[18px]" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- sub categoried checkbox will open when any category is selected -->
+                                <div class="sm:col-span-6 text-sm">
+                                    <div class="font-semibold leading-6 text-gradient pl-4">Select subcategories you are
+                                        interested in</div>
+                                    <div class="px-3 flex flex-wrap items-center gap-1">
+                                        <!-- Interest subcategories checkboxes here -->
+                                        <label class="inline-flex items-center">
+                                            <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600" checked
+                                                name="option1">
+                                            <span class="ml-1 text-gray-700">Option 1</span>
+                                        </label>
+                                        <label class="inline-flex items-center">
+                                            <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600" checked
+                                                name="option2">
+                                            <span class="ml-1 text-gray-700">Option 2</span>
+                                        </label>
+                                        <label class="inline-flex items-center">
+                                            <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600" checked
+                                                name="option3">
+                                            <span class="ml-1 text-gray-700">Option 3</span>
+                                        </label>
+                                        <label class="inline-flex items-center">
+                                            <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600" checked
+                                                name="option4">
+                                            <span class="ml-1 text-gray-700">Option 4</span>
+                                        </label>
+                                        <label class="inline-flex items-center">
+                                            <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600" checked
+                                                name="option5">
+                                            <span class="ml-1 text-gray-700">Option 5</span>
+                                        </label>
+                                        <label class="inline-flex items-center">
+                                            <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600" checked
+                                                name="option6">
+                                            <span class="ml-1 text-gray-700">Option 6</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="sm:col-span-6 text-sm">
+                                    <label for="radio-btn"
+                                        class="block font-semibold leading-6 text-gradient pl-4">Willing to
+                                        relocate</label>
+                                    <div class="flex mt-2">
+                                        <div class="flex pl-4 text-[#afafaf]">
+                                            <span class="mr-2">Yes</span>
+                                            <input name="willing_to_relocate" type="radio" value="yes"
+                                                class="w-5 h-5 border-gradient" checked="checked"
+                                                onChange="setFormData({...formData,willing_to_relocate:true})" />
+                                        </div>
+
+                                        <div class="flex pl-7 text-[#afafaf]">
+                                            <div class="mr-2">No</div>
+                                            <input name="willing_to_relocate" type="radio" value="no"
+                                                class="w-5 h-5 border-gradient"
+                                                onChange="setFormData({...formData,willing_to_relocate:false,preferred_locations:[]})" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sm:col-span-6 text-sm">
+                                    <!-- Relocate areas section here -->
+                                    <div class='flex justify-center'>
+                                        <label class="font-semibold leading-6 text-gradient pl-[14px]">Preferred Areas
+                                            of Relocation
+                                        </label>
+
+                                        <button type='button' class='rounded-full bg-gradient text-white w-[100px]'>
+                                            Add More +</button>
+                                    </div>
+                                    <div class="flex flex-row min-[375px]:flex-row justify-between items-center px-1">
+
+                                        <div class="mt-2 mr-[14px] relative w-[50%]">
+                                            <input type="text" name="country" autoComplete="country-name"
+                                                class="w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
+                                                value="" placeholder='Country'>
+
+                                        </div>
+
+                                        <div class="mt-2 relative mr-[14px] w-[50%]">
+                                            <input type="text" list="city" name="city" autoComplete="city-name"
+                                                class="w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
+                                                value="" placeholder='City'>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                                <div class="sm:col-span-6 text-sm">
+                                    <label htmlFor="languages"
+                                        class="block font-semibold leading-6 text-gradient pl-[14px]">Languages
+                                        Known *
+                                    </label>
+                                    <div class="mt-2 relative w-[100%]">
+
+                                        <select id="languages" name="languages" type="languages"
+                                            class="w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px] appearance-none">
+                                            <option selected disabled value="">Select a language</option>
+                                            <option value="English">English</option>
+                                            <option value="German">German</option>
+                                            <option value="Spanish">Spanish</option>
+                                            <option value="French">French</option>
+                                            <option value="Hindi">Hindi</option>
+                                        </select>
+
+                                        <img src="./img/Vectoryy.png" alt="" class="absolute top-[18px] right-[18px]" />
+                                    </div>
+                                    <div id="selected_languages" class="mt-2 flex flex-wrap">
+                                        <div>
+                                            <div class="flex cursor-pointer flex-wrap">
+
+                                                <div
+                                                    class="flex items-center rounded-full bg-gradient text-white py-1 px-2 text-xs mb-2 mr-2">
+                                                    <span class="mr-2">Language</span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                                        viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                                    </svg>
+                                                </div>
+
+                                                <div
+                                                    class="flex rounded-full border border-1 border-orange-400 py-1 px-2 text-orange-400 text-xs mb-2 mr-2">
+                                                    <span class="mr-2">Conversational</span>
+                                                    <input type="radio" checked />
+                                                </div>
+
+                                                <div
+                                                    class="flex rounded-full border border-1 border-orange-400 py-1 px-2 text-orange-400 text-xs mb-2 mr-2">
+                                                    <span class="mr-2">Fluent</span>
+                                                    <input type="radio" checked />
+                                                </div>
+
+                                                <div
+                                                    class="flex rounded-full border border-1 border-orange-400 py-1 px-2 text-orange-400 text-xs mb-2">
+                                                    <span class="mr-2">Native</span>
+                                                    <input type="radio" checked />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="flex items-center justify-center mb-8">
+                                    <button
+                                        class="flex shadow-md text-white py-2 px-3 rounded-full items-center justify-center mr-2 bg-gradient">
+                                        <span class="mr-2"><img src="./img/tick.png" /></span>
+                                        <span class="text-xs">Save Changes</span>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- menu bottom -->
+                <div class="bg-white">
+                    
+                </div>
+                <div style="
+                            background: linear-gradient(
+                            180deg,
+                            #ff6535 0%,
+                            #ff9e48 48.9%,
+                            #ffce58 100%
+                            ); position: fixed; bottom: 0;
+                        "
+                    class="flex flex-row justify-between shadow-md items-center px-[32px] rounded-[100px] w-10/12 h-[64px] mb-3">
+                    <img src="./img/search.png" alt="">
+                    <img src="./img/4.png" alt="" />
+                    <img src="./img/chat-inactive.png" alt="" />
+                    <img src="./img/doti.png" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleForm(formId, button) {
+            const educationForm = document.getElementById('education');
+            const personalForm = document.getElementById('personal');
+
+            if (formId === 'education') {
+                educationForm.classList.remove('hidden');
+                personalForm.classList.add('hidden');
+            } else if (formId === 'personal') {
+                educationForm.classList.add('hidden');
+                personalForm.classList.remove('hidden');
+            }
+
+            // Change button style
+            const buttons = document.querySelectorAll('.btn-toggle');
+            buttons.forEach(btn => {
+                if (btn !== button) {
+                    btn.classList.remove('active');
+                }
+            });
+            button.classList.toggle('active');
+        }
+    </script>
+
+    <style>
+        .active {
+            background-color: white;
+            background-image: linear-gradient(to right, #FF6535, #FF9E48, #FFCE58);
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            border: #FF6535 1px solid;
+        }
+    </style>
+</body>
+
+</html>

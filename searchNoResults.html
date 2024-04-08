@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detailed Search</title>
+  <link rel="stylesheet" href="./dist/output.css" />
+</head>
+
+<body class="font-primary">
+  <section>
+    <div>
+      <div class="bg-contain bg-no-repeat w-full h-[280px] sm:mx-auto sm:w-full sm:max-w-md"
+        style="background-image: url('./img/background-2.png')">
+        <div class="flex justify-center items-center pt-[52px]">
+          <img src="./img/logo.png" alt="logo" />
+        </div>
+      </div>
+      <div class="sm:mx-auto sm:w-full sm:max-w-[480px] mb-8">
+        <div class="mt-[-140px]">
+          <div class="flex items-center justify-center px-8 mt-8 pb-9 shadow-md rounded-b-full">
+            <form class="flex-col mr-3 items-center">
+              <div class="flex items-center">
+                <div class="mr-2">
+                  <div class="relative mt-1">
+                    <div class="absolute inset-y-0 left-0 pl-[15px] flex items-center pointer-events-none">
+                      <img src="./img/sarch.png" />
+                    </div>
+                    <input type="text" class="pl-10 pr-4 py-3 border border-[#585858] text-sm w-full rounded-full"
+                      placeholder="Search by name" />
+                  </div>
+                </div>
+                <button type="submit" class="bg-gradient text-white rounded-full px-3 py-2">
+                  Go
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="px-6">
+            <div class="text-[14px] my-4 font-semibold text-[#585858]">
+              Search by :
+            </div>
+
+            <div class="flex flex-wrap">
+              <div class="text-[12px]">
+                <select name="category" class="max-w-[150px] text-white bg-gradient px-2 py-1 rounded-full mb-1 mr-1">
+                  <option class="w-[100%]" selected value="">
+                    Select a category
+                  </option>
+                  <option value="Pre-School">Pre-School</option>
+                  <option value="High-School">High School</option>
+                  <option value="Middle School">Middle School</option>
+                  <option value="Bachelor's Degree">Bachelor's Degree</option>
+                </select>
+              </div>
+
+              <div class="text-[12px]">
+                <select name="subCategory"
+                  class="max-w-[160px] text-white bg-gradient px-2 py-1 rounded-full mb-1 mr-1">
+                  <option class="w-[100%]" selected value="">
+                    Select a sub-category
+                  </option>
+                  <option value="Pre-School">Pre-School</option>
+                  <option value="High-School">High School</option>
+                  <option value="Middle School">Middle School</option>
+                  <option value="Bachelor's Degree">Bachelor's Degree</option>
+                </select>
+              </div>
+
+              <div class="text-[12px]">
+                <select name="country" class="max-w-[150px] text-white bg-gradient px-2 py-1 rounded-full mb-1 mr-1">
+                  <option class="w-[100%]" selected value="">
+                    Select a country
+                  </option>
+                  <option value="India">India</option>
+                  <option value="USA">USA</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="Brazil">Brazil</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="text-[14px] mx-6 my-4 font-semibold text-[#585858]">
+            Search results :
+          </div>
+          <div class="overflow-y-auto flex flex-col items-center" style="max-height: calc(100vh - 200px);">
+            <img src="./img/no-results.png" alt="">
+          </div>
+
+          <!-- menu component -->
+          <div class="relative z-50 flex justify-center">
+            <div style="
+                  background: linear-gradient(
+                    180deg,
+                    #ff6535 0%,
+                    #ff9e48 48.9%,
+                    #ffce58 100%
+                  );
+                  position: fixed;
+                  bottom: 0;
+                "
+              class="flex flex-row justify-between shadow-md items-center px-[32px] rounded-[100px] w-10/12 h-[64px] mb-3">
+              <img src="./img/search-active.png" alt="" />
+              <img src="./img/4.png" alt="" />
+              <img src="./img/chat-inactive.png" alt="" />
+              <img src="./img/dots-inactive.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

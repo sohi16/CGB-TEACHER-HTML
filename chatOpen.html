@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class='flex flex-col gap-2 font-primary items-center min-h-screen'>
+        <!-- header background section -->
+        <div class="bg-cover bg-center bg-no-repeat w-screen h-[280px] min-w-screen fixed top-0"
+            style="background-image: url('./img/background-2.png')">
+            <div class="flex justify-center items-center pt-[48px]">
+                <img src="./img/logo.png" alt="logo" class='' />
+            </div>
+        </div>
+        <!-- top bar (back, name, profile-pic) fixed -->
+        <div
+            class='flex flex-row fixed top-[280px] justify-between items-center mt-[-90px] bg-white w-11/12 rounded-[50px] mx-10 shadow-lg h-16'>
+            <div class='flex flex-row items-center ml-4 gap-1'>
+                <i class='text-left text-[16px] align-middle text-[#585858] font-normal fas fa-chevron-left'></i>
+                <p class='text-left text-[16px] font-semibold align-middle text-[#585858]'>Back</p>
+            </div>
+
+            <div class="flex flex-row gap-1 items-center">
+                <h1 class='text-left align-middle font-primary text-[20px] font-semibold text-[#585858]'>Name</h1>
+                <span class="bg-green-500 w-[8px] h-[8px] rounded-[100px] mt-[-8px]"></span>
+            </div>
+            <div class="flex flex-row items-center mr-4 gap-2">
+            <img src='./img/image.png' class=' w-[48px] h-[48px] rounded-full bg-gray-300' alt='' />
+            <img src="./img/dots-chat.png" class="w-[18px] h-[18px]">
+        </div>
+        </div>
+        <img src="./img/block-btn.png" class="absolute mt-[250px] ml-[240px]" alt="">
+        <!-- display chat messages section scrollable -->
+        <div class='overflow-y-auto mt-[260px] py-2 w-11/12 space-y-4 px-3' style="max-height: calc(100vh - 400px)">
+            <div class="chat-message">
+                <div class="flex items-end">
+                    <div class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-2 items-start">
+                        <div>
+                            <span
+                                class="px-4 py-2 inline-block rounded-bl-none rounded-full bg-[#f1f1f1] text-[#2c2c2c]">Gorem
+                                ipsum dolor sit amet, consectetur adipiscing
+                                elit.</span>
+                        </div>
+                    </div>
+                    <img src="./img/image.png" alt="My profile" class="w-6 h-6 rounded-full order-1" />
+                </div>
+            </div>
+            <div class="chat-message">
+                <div class="flex items-end justify-end">
+                    <div class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-1 items-end">
+                        <div class="flex flex-row items-center mx-2 px-4 py-2 gap-2 rounded-full inline-block rounded-br-none bg-[#e4e4e4]">
+                            <span
+                                class="text-[#2c2c2c]">Gorem
+                                ipsum dolor sit amet</span>
+                                <img src="./img/icons8-double-tick-50 (1).png" class="w-[12px] h-[12px]" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-message">
+                <div class="flex items-end">
+                    <div class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-2 items-start">
+                        <div>
+                            <span
+                                class="px-4 py-2 inline-block rounded-bl-none rounded-full bg-[#f1f1f1] text-[#2c2c2c]">Gorem
+                                ipsum dolor sit amet, consectetur adipiscing
+                                elit.</span>
+                        </div>
+                    </div>
+                    <img src="./img/image.png" alt="My profile" class="w-6 h-6 rounded-full order-1" />
+                </div>
+            </div>
+            <div class="chat-message">
+                <div class="flex items-end justify-end">
+                    <div class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-1 items-end">
+                        <div class="flex flex-row items-center mx-2 px-4 py-2 gap-2 rounded-full inline-block rounded-br-none bg-[#e4e4e4]">
+                            <span
+                                class="text-[#2c2c2c]">Gorem
+                                ipsum dolor sit amet</span>
+                                <img src="./img/icons8-double-tick-50 (1).png" class="w-[12px] h-[12px]" alt="">
+                        </div>
+                        <div class="flex flex-row items-center mx-2 px-4 py-2 gap-2 rounded-full inline-block rounded-br-none bg-[#e4e4e4]">
+                            <span
+                                class=" text-[#2c2c2c]">Gorem</span>
+                                <img src="./img/icons8-double-tick-50 (1).png" class="w-[12px] h-[12px]" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-message">
+                <div class="flex items-end">
+                    <div class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-2 items-start">
+                        <div>
+                            <span
+                                class="px-4 py-2 inline-block rounded-bl-none rounded-full bg-[#f1f1f1] text-[#2c2c2c]">Gorem
+                                ipsum dolor sit amet, consectetur adipiscing
+                                elit.</span>
+                        </div>
+                    </div>
+                    <img src="./img/image.png" alt="My profile" class="w-6 h-6 rounded-full order-1" />
+                </div>
+            </div>
+            <div class="chat-message">
+                <div class="flex items-end justify-end">
+                    <div class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-1 items-end">
+                        <div class="flex flex-row items-center mx-2 px-4 py-2 gap-2 rounded-full inline-block rounded-br-none bg-[#e4e4e4]">
+                            <span
+                                class="text-[#2c2c2c]">Gorem</span>
+                                <img src="./img/icons8-double-tick-50 (1).png" class="w-[12px] h-[12px]" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-message">
+                <div class="flex items-end">
+                    <div class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-2 items-start">
+                        <div>
+                            <span
+                                class="px-4 py-2 inline-block rounded-bl-none rounded-full bg-[#f1f1f1] text-[#2c2c2c]">Gorem
+                                ipsum dolor sit amet, consectetur adipiscing
+                                elit.</span>
+                        </div>
+                    </div>
+                    <img src="./img/image.png" alt="My profile" class="w-6 h-6 rounded-full order-1" />
+                </div>
+            </div>
+            <div class="chat-message">
+                <div class="flex items-end justify-end">
+                    <div class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-1 items-end">
+                        <div class="flex flex-row items-center mx-2 px-4 py-2 gap-2 rounded-full inline-block rounded-br-none bg-[#e4e4e4]">
+                            <span
+                                class="text-[#2c2c2c]">Gorem
+                                ipsum dolor sit amet</span>
+                                <img src="./img/icons8-double-tick-50 (1).png" class="w-[12px] h-[12px]" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-message">
+                <div class="flex items-end">
+                    <div class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-2 items-start">
+                        <div>
+                            <span
+                                class="px-4 py-2 inline-block rounded-bl-none rounded-full bg-[#f1f1f1] text-[#2c2c2c]">Gorem
+                                ipsum dolor sit amet, consectetur adipiscing
+                                elit.</span>
+                        </div>
+                    </div>
+                    <img src="./img/image.png" alt="My profile" class="w-6 h-6 rounded-full order-1" />
+                </div>
+            </div>
+            <div class="chat-message">
+                <div class="flex items-end justify-end">
+                    <div class="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-1 items-end">
+                        <div class="flex flex-row items-center mx-2 px-4 py-2 gap-2 rounded-full inline-block rounded-br-none bg-[#e4e4e4]">
+                            <span
+                                class="text-[#2c2c2c]">Gorem
+                                ipsum dolor sit amet</span>
+                                <img src="./img/icons8-double-tick-50.png" class="w-[12px] h-[12px]" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Send message section fixed -->
+        <form method="POST" encType="multipart/form-data"
+            class="px-[16px] pt-2 bg-white mt-0 flex items-center fixed bottom-20 mb-1">
+            <div class="relative flex w-11/12">
+                <span class="absolute inset-y-0 flex items-center">
+                    <div
+                        class="inline-flex items-center justify-center rounded-full h-12 w-12 transition duration-500 ease-in-out text-gray-500 focus:outline-none">
+                        <i class="text-[#afafaf] fas fa-paperclip"></i>
+                        <input type="file" id="fileInput" style="display: none;" />
+                    </div>
+                </span>
+                <textarea type="text" placeholder="Message"
+                    class="w-[280px] text-md h-[48px] rounded-full focus:outline-none focus:placeholder-[#afafaf] text-black placeholder-[#afafaf] pl-12 bg-[#f1f1f1] py-3"
+                    value=""></textarea>
+
+                <div class="absolute right-0 items-center inset-y-0 flex">
+                    <button type="button"
+                        class="inline-flex items-center justify-center rounded-full h-10 w-10 transition duration-500 ease-in-out text-gray-500 focus:outline-none">
+                        <i class="text-2xl text-[#afafaf] mr-2 fas fa-smile"></i>
+                    </button>
+                </div>
+            </div>
+            <button type="submit"
+                class="inline-flex items-center justify-center rounded-lg w-12 h-12 pl-3 py-2 transition duration-500 ease-in-out bg-white">
+                <img src="./img/icons (2).png" alt="" class="w-12 h-10 m-0 p-0" />
+            </button>
+
+        </form>
+        <!-- menu bottom fixed -->
+        <div style="
+                background: linear-gradient(
+                  180deg,
+                  #ff6535 0%,
+                  #ff9e48 48.9%,
+                  #ffce58 100%
+                ); position: fixed; bottom: 0;
+              "
+            class="flex flex-row justify-between shadow-md items-center px-[32px] rounded-[100px] w-10/12 h-[64px] mb-3">
+            <img src="./img/search.png" alt="">
+            <img src="./img/4.png" alt="" />
+            <img src="./img/1.png" alt="" />
+            <img src="./img/dots-inactive.png" />
+
+        </div>
+    </div>
+</body>
+
+</html>

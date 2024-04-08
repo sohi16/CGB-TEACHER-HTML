@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+</head>
+
+<body>
+    <div class='flex flex-col gap-2 font-primary items-center min-h-screen'>
+        <!-- header background section -->
+        <div class="bg-contain bg-no-repeat w-screen h-[280px] min-w-screen fixed top-0"
+            style="background-image: url('./img/background-2.png')">
+            <div class="flex justify-center items-center pt-[48px]">
+                <img src="./img/logo.png" alt="logo" class='' />
+            </div>
+        </div>
+        <!-- search messages section fixed-->
+        <div class='flex flex-col fixed items-left top-[160px] mx-6 gap-2'>
+            <div class='mt-2'>
+                <p class='text-left text-[22px] text-[#585858] font-semibold'>Messages</p>
+            </div>
+            <div class="flex flex-col sm:flex-row items-center justify-between sm:px-12 mb-2 sm:mb-[18px]">
+                <form action="#" method="POST" class="mb-2 sm:mb-0 sm:mr-12 sm:w-1/2">
+                    <div class="relative border-[#AFAFAF]">
+                        <div class="absolute inset-y-0 left-0 pl-[15px] flex items-center pointer-events-none">
+                            <img src="./img/sarch.png" alt="" />
+                        </div>
+                        <input type="text"
+                            class="pl-10 pr-4 py-3 border border-[#AFAFAF] text-md w-full rounded-full min-w-[300px]"
+                            placeholder="Search Chats" aria-label="Search Chats" value="" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Display chats section scrollable -->
+        <div class="overflow-y-auto shadow-lg mt-[280px] rounded-[50px] py-2 w-11/12" id="chats"
+            style="max-height: calc(100vh - 364px);">
+            <div class="flex items-center pl-[10px] py-[10px] px-4 justify-between mx-5 mb-2 border-b border-[#e2e2e2]">
+                <div class="flex items-center">
+                    <img src="./img/454.png" alt="" class="w-[40px] h-[40px] mr-0.5" />
+                    <div class="ml-[10px]">
+                        <div class="flex flex-row gap-1 items-center">
+                            <h1 class="font-semibold text-[#585858] text-[14px]">Name</h1>
+                            <span class="bg-red-500 w-[6px] h-[6px] rounded-[100px] "></span>
+                        </div>
+                        <p class="font-normal text-[11px] text-[#afafaf]">
+                            Dorem ipsum dolor sit amet, <br />
+                            consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center items-center">
+                    <p class="font-medium text-[15px] text-[#afafaf]">00:45</p>
+                </div>
+            </div>
+            <div class="flex items-center pl-[10px] py-[10px] px-4 justify-between mx-5 mb-2 border-b border-[#e2e2e2]">
+                <div class="flex items-center">
+                    <img src="./img/454.png" alt="" class="w-[40px] h-[40px] mr-0.5" />
+                    <div class="ml-[10px]">
+                        <div class="flex flex-row gap-1 items-center">
+                            <h1 class="font-semibold text-[#585858] text-[14px]">Name</h1>
+                            <span class="bg-green-500 w-[6px] h-[6px] rounded-[100px] "></span>
+                        </div>
+                        <p class="font-normal text-[11px] text-[#afafaf]">
+                            Dorem ipsum dolor sit amet, <br />
+                            consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center items-center">
+                    <p class="font-medium text-[15px] text-[#afafaf]">00:45</p>
+                </div>
+            </div>
+            <div class="flex items-center pl-[10px] py-[10px] px-4 justify-between mx-5 mb-2 border-b border-[#e2e2e2]">
+                <div class="flex items-center">
+                    <img src="./img/454.png" alt="" class="w-[40px] h-[40px] mr-0.5" />
+                    <div class="ml-[10px]">
+                        <div class="flex flex-row gap-1 items-center">
+                            <h1 class="font-semibold text-[#585858] text-[14px]">Name</h1>
+                            <span class="bg-red-500 w-[6px] h-[6px] rounded-[100px] "></span>
+                        </div>
+                        <p class="font-normal text-[11px] text-[#afafaf]">
+                            Dorem ipsum dolor sit amet, <br />
+                            consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center items-center">
+                    <p class="font-medium text-[15px] text-[#afafaf]">00:45</p>
+                </div>
+            </div>
+            <div class="flex items-center pl-[10px] py-[10px] px-4 justify-between mx-5 mb-2 border-b border-[#e2e2e2]">
+                <div class="flex items-center">
+                    <img src="./img/454.png" alt="" class="w-[40px] h-[40px] mr-0.5" />
+                    <div class="ml-[10px]">
+                        <div class="flex flex-row gap-1 items-center">
+                            <h1 class="font-semibold text-[#585858] text-[14px]">Name</h1>
+                            <!-- <span class="bg-green-500 w-[6px] h-[6px] rounded-[100px] "></span> -->
+                        </div>
+                        <p class="font-normal text-[11px] text-[#afafaf]">
+                            Dorem ipsum dolor sit amet, <br />
+                            consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center items-center">
+                    <p class="font-medium text-[15px] text-[#afafaf]">00:45</p>
+                </div>
+            </div>
+            <div class="flex items-center pl-[10px] py-[10px] px-4 justify-between mx-5 mb-2 border-b border-[#e2e2e2]">
+                <div class="flex items-center">
+                    <img src="./img/454.png" alt="" class="w-[40px] h-[40px] mr-0.5" />
+                    <div class="ml-[10px]">
+                        <div class="flex flex-row gap-1 items-center">
+                            <h1 class="font-semibold text-[#585858] text-[14px]">Name</h1>
+                            <!-- <span class="bg-green-500 w-[6px] h-[6px] rounded-[100px] "></span> -->
+                        </div>
+                        <p class="font-normal text-[11px] text-[#afafaf]">
+                            Dorem ipsum dolor sit amet, <br />
+                            consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center items-center">
+                    <p class="font-medium text-[15px] text-[#afafaf]">00:45</p>
+                </div>
+            </div>
+            <div class="flex items-center pl-[10px] py-[10px] px-4 justify-between mx-5 mb-2 border-b border-[#e2e2e2]">
+                <div class="flex items-center">
+                    <img src="./img/454.png" alt="" class="w-[40px] h-[40px] mr-0.5" />
+                    <div class="ml-[10px]">
+                        <div class="flex flex-row gap-1 items-center">
+                            <h1 class="font-semibold text-[#585858] text-[14px]">Name</h1>
+                            <span class="bg-green-500 w-[6px] h-[6px] rounded-[100px] "></span>
+                        </div>
+                        <p class="font-normal text-[11px] text-[#afafaf]">
+                            Dorem ipsum dolor sit amet, <br />
+                            consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center items-center">
+                    <p class="font-medium text-[15px] text-[#afafaf]">00:45</p>
+                </div>
+            </div>
+            <div class="flex items-center pl-[10px] py-[10px] px-4 justify-between mx-5 mb-2 border-b border-[#e2e2e2]">
+                <div class="flex items-center">
+                    <img src="./img/454.png" alt="" class="w-[40px] h-[40px] mr-0.5" />
+                    <div class="ml-[10px]">
+                        <div class="flex flex-row gap-1 items-center">
+                            <h1 class="font-semibold text-[#585858] text-[14px]">Name</h1>
+                            <span class="bg-green-500 w-[6px] h-[6px] rounded-[100px] "></span>
+                        </div>
+                        <p class="font-normal text-[11px] text-[#afafaf]">
+                            Dorem ipsum dolor sit amet, <br />
+                            consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center items-center">
+                    <p class="font-medium text-[15px] text-[#afafaf]">00:45</p>
+                </div>
+            </div>
+        </div>
+        <!-- Menu Bottom Section Fixed -->
+        <div style="
+                background: linear-gradient(
+                  180deg,
+                  #ff6535 0%,
+                  #ff9e48 48.9%,
+                  #ffce58 100%
+                ); position: fixed; bottom: 0;
+              "
+            class="flex flex-row justify-between shadow-md items-center px-[32px] rounded-[100px] w-10/12 h-[64px] mb-3">
+            <img src="./img/search.png" alt="">
+            <img src="./img/4.png" alt="" />
+            <img src="./img/1.png" alt="" />
+            <img src="./img/dots-inactive.png" />
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
