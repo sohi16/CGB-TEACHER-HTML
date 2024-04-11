@@ -289,6 +289,74 @@ span {
         font-size: 20px;
         font-weight: 700;
     }
+    .react-calendar {
+  width: 450px;
+  height: 400px;
+  max-width: 100%;
+  background-color: #fff;
+  color: #222;
+  border-radius: 8px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2%;
+}
+
+.react-calendar__month-view__weekdays {
+  display: flex;
+  margin-left: 20px;
+  justify-content: space-between;
+}
+
+.react-calendar__month-view__weekdays span {
+  font-weight: bold;
+}
+
+.react-calendar__month-view__days {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.react-calendar__month-view__days__day {
+  width: 14.28%; /* Adjust to fit 7 days in a row */
+  text-align: center;
+  line-height: 3.7rem;
+
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: white;
+  background-color: #f3c699;
+  border-radius: 50%;
+}
+
+.react-calendar__month-view__days__day--weekend:hover,
+.react-calendar__month-view__days__day--weekend:focus {
+  background-color: #f3c699;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  background-color: #f1f1f1;
+  color: #afafaf;
+  border-radius: 50%;
+}
+
+.react-calendar__tile--now {
+  background: linear-gradient(180deg, #ff6535 0%, #ff9e48 48.9%, #ffce58 100%);
+  color: white;
+  border-radius: 100%;
+  font-weight: bold;
+  
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: white; 
+  background-color:#F3C699; 
+  border-radius: 50%;
+}
+
+/* Styles for active and disabled days */
+/* Add more styles as needed */
+
   </style>
   <body class="font-primary flex justify-center">
     <section>
@@ -316,6 +384,56 @@ span {
                 </div>
             
         </div>
+        <div class="react-calendar">
+          <div class="react-calendar__month-view__weekdays">
+            <span>Mon</span>
+            <span>Tue</span>
+            <span>Wed</span>
+            <span>Thu</span>
+            <span>Fri</span>
+            <span>Sat</span>
+            <span>Sun</span>
+          </div>
+          <div class="react-calendar__month-view__days">
+            <div class="react-calendar__month-view__days__day">1</div>
+            <div class="react-calendar__month-view__days__day">2</div>
+            <div class="react-calendar__month-view__days__day">3</div>
+            <div class="react-calendar__month-view__days__day">4</div>
+            <div class="react-calendar__month-view__days__day">5</div>
+            <div class="react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend">6</div>
+            <div class="react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend">7</div>
+            <div class="react-calendar__month-view__days__day">8</div>
+            <div class="react-calendar__month-view__days__day">9</div>
+            <div class="react-calendar__month-view__days__day">10</div>
+            <div class="react-calendar__month-view__days__day react-calendar__tile--now ">11</div>
+            <div class="react-calendar__month-view__days__day">12</div>
+            <div class="react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend">13</div>
+            <div class="react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend">14</div>
+            <div class="react-calendar__month-view__days__day">15</div>
+            <div class="react-calendar__month-view__days__day">16</div>
+            <div class="react-calendar__month-view__days__day">17</div>
+            <div class="react-calendar__month-view__days__day">18</div>
+            <div class="react-calendar__month-view__days__day">19</div>
+            <div class="react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend">20</div>
+            <div class="react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend">21</div>
+            <div class="react-calendar__month-view__days__day">22</div>
+            <div class="react-calendar__month-view__days__day">23</div>
+            <div class="react-calendar__month-view__days__day">24</div>
+            <div class="react-calendar__month-view__days__day">25</div>
+            <div class="react-calendar__month-view__days__day">27</div>
+            <div class="react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend">28</div>
+            <div class="react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend">29</div>
+            <div class="react-calendar__month-view__days__day">30</div>
+            <div class="react-calendar__month-view__days__day">31</div>
+            <div class="react-calendar__month-view__days__day react-calendar__month-view__days__day--neighboringMonth">1</div>
+            <div class="react-calendar__month-view__days__day react-calendar__month-view__days__day--neighboringMonth">2</div>
+            <div class="react-calendar__month-view__days__day react-calendar__month-view__days__day--neighboringMonth">3</div>
+            <div class="react-calendar__month-view__days__day react-calendar__month-view__days__day--neighboringMonth">4</div>
+            <div class="react-calendar__month-view__days__day react-calendar__month-view__days__day--neighboringMonth">5</div>
+            
+          </div>
+        </div>
+        
         <div class="flex justify-center mt-5">
             <div class=" flex">
                 <button class="active" style="background: linear-gradient(
@@ -347,11 +465,11 @@ span {
                     <hr/>
                 </div> 
                 <div class="time_line booked_time">
-                    <div class="available_time"> 9:00 </div>
+                    <div class="available_time">09:00 - 10:00 </div>
                     <hr/>
                 </div> 
                 <div class="time_line available_time flex flex-row gap-2">
-                    <div class="available_time text-white"> 11:00
+                    <div class="available_time text-white"> 11:00-12:00
                     </div>
                     <hr class="w-[100px] font-bold">
                     <span class="available_time text-white font-medium">Price: ₹ 300</span>
