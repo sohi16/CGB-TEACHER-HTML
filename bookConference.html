@@ -14,7 +14,7 @@
 table {
     width: 80%;
     border-collapse: collapse;
-    margin-left: 28px;
+    /* margin-left: 28px; */
     
 }
 
@@ -53,7 +53,7 @@ th, td {
 
 
 #cards_container {
-  height: 400px;
+  max-height: calc(100vh - 100px);
   overflow-y: scroll;
 }
 
@@ -98,6 +98,8 @@ th, td {
   width: 380px;
   position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
   margin-left: 2%;
   justify-content: center;
 }
@@ -123,13 +125,7 @@ th, td {
 }
 
 #month-header{
-  background: linear-gradient(
-    180deg,
-    #ff6535 0%,
-    #ff9e48 48.9%,
-    #ffce58 100%
-  );
-  color: white;
+ 
   padding: 5px 27px;
   border-radius: 20px;
   font-weight: 500;
@@ -232,31 +228,33 @@ span {
     
 }
   </style>
-  <body class="font-primary flex justify-center">
-    <section>
-      <div>
-        <div
-          class="bg-contain bg-no-repeat w-full h-[280px] sm:mx-auto sm:w-full sm:max-w-md"
-          style="background-image: url('./img/background-2.png')"
-            >
-            <div class="flex justify-center items-center pt-[52px]">
-                <img src="./img/logo.png" alt="logo" />
-            </div>
+  <body class="font-primary w-full">
+    <div
+      class="bg-contain bg-no-repeat w-full h-[280px] sm:mx-auto sm:w-full sm:max-w-md"
+      style="background-image: url('./img/background-2.png')"
+        >
+        <div class="flex justify-center items-center pt-[52px]">
+            <img src="./img/logo.png" alt="logo" />
         </div>
-        <div style="display: flex; justify-content: center; align-items: center; gap:68px;margin-top: -65px;  margin-bottom: 30px;">
-            <span style="color: #AFAFAF; font-weight: 600;">Today</span>
-            <h1 id="month-header">Month</h1>
-           
-            </div>
+    </div>
+    <div class="flex flex-col gap-2 font-primary min-h-screen">
+      
+        <div class="flex flex-row justify-start items-center mt-[-90px] ">
+          <div class="flex basis-1/12 items-center gap-2 ml-2 "> 
+              <img src="./img/left.png" alt="" class="w-4 h-4">
+              <span class="text-[#afafaf] text-[16px] font-medium">Back</span>
+          </div>
+          <div class="flex basis-11/12 justify-center"> 
+              <h1 id="month-header" class="bg-white shadow-md text-gradient">Month</h1>
+          </div>
+      </div>
+      
+      <div class="flex justify-center items-center w-screen" >    
+        <div id="calendar" class="card shadow-md rounded-[50px] px-3 pb-5 ">
+            <!-- Calendar content will be dynamically added here -->
         </div>
-        <div class="flex justify-center items-center " >
-            
-                
-                <div id="calendar" class="card shadow-md rounded-[50px] pb-5" style="width: 450px;" >
-                    <!-- Calendar content will be dynamically added here -->
-                </div>
-            
-        </div>
+    
+</div>
         <div class="flex justify-center mt-5">
           <div class=" flex">
               <button class="inactive"><span>Calls</span></button>
@@ -270,15 +268,15 @@ span {
               ><span class="text-white">Conference</span></button>
           </div>
       </div>
-        <div class="flex flex-col items-start" style="margin-top: 20px;margin-left: 10%;" >
+        <div class="flex flex-col justify-start items-start" style="margin-top: 20px;margin-left: 10%;" >
 
             <div id="short_date_form"></div>
             <span style="font-size: 13px;color: #AFAFAF;">Daily Tasks</span>
             
           </div>
         
-        <div id="cards_container" class="overflow-y-auto" style="height: 350px;">
-            <div id="cards" class="flex flex-col justify-center items-center" style="margin-top: 10px;">
+        <div id="cards_container" class="flex flex-col w-full items-center overflow-y-auto mx-2" style="height: 350px;">
+            <div id="cards" class="flex flex-col justify-center items-center w-10/12" style="margin-top: 10px;">
                 <div class="card rounded-[40px] p-5" style="box-shadow: 0px 2px 6px 0px #00000040;width: 400px;margin-bottom: 20px;">
                     <div class="flex items-center justify-between">
                       <div class="time">2:00pm - 3:00pm  </div>  
@@ -314,6 +312,7 @@ span {
                 </div>
             </div>
         </div>
+        <div class="flex flex-row justify-center items-center">
         <div id="sticky_div" class="py-[10px] rounded-full mb-2 ">
           <div class="flex items-center justify-between px-[50px]">
             <img src="./img/search-active.png" alt="" />
@@ -323,6 +322,7 @@ span {
           </div>
         </div>
       </div>
-    </section>
+      </div>
+    </div>
   </body>
 </html>

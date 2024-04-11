@@ -1543,6 +1543,10 @@ video {
   width: 100vw;
 }
 
+.w-\[600px\]{
+  width: 600px;
+}
+
 .min-w-\[300px\]{
   min-width: 300px;
 }
@@ -2120,6 +2124,10 @@ video {
 
 .gap-1{
   gap: 0.25rem;
+}
+
+.gap-10{
+  gap: 2.5rem;
 }
 
 .gap-12{
