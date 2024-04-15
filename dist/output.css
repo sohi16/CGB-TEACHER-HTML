@@ -919,10 +919,6 @@ video {
   margin-top: -1.25rem;
 }
 
-.-mt-8{
-  margin-top: -2rem;
-}
-
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -933,10 +929,6 @@ video {
 
 .mb-2{
   margin-bottom: 0.5rem;
-}
-
-.mb-20{
-  margin-bottom: 5rem;
 }
 
 .mb-24{
@@ -1143,8 +1135,8 @@ video {
   margin-top: 280px;
 }
 
-.mt-\[440px\]{
-  margin-top: 440px;
+.mt-\[500px\]{
+  margin-top: 500px;
 }
 
 .box-border{
@@ -1476,6 +1468,10 @@ video {
 
 .w-\[22px\]{
   width: 22px;
+}
+
+.w-\[250px\]{
+  width: 250px;
 }
 
 .w-\[25px\]{
