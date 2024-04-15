@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Platform</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body class="font-primary">
+    <section>
+      <div>
+        <div
+          class="bg-contain bg-no-repeat w-full h-[280px] sm:mx-auto sm:w-full sm:max-w-md"
+          style="background-image: url('./img/background-2.png')"
+        >
+          <div class="flex justify-center items-center pt-[52px]">
+            <img src="./img/logo.png" alt="logo" />
+          </div>
+        </div>
+
+        <div class="sm:mx-auto sm:w-full">
+          <div
+            class="flex items-center justify-center px-9 pb-[17px] mt-[-100px]"
+          >
+            <form action="#" method="POST" class="mr-12">
+              <div>
+                <div class="relative mt-1">
+                  <div
+                    class="absolute inset-y-0 left-0 pl-[15px] flex items-center pointer-events-none"
+                  >
+                    <img src="./img/sarch.png" alt="" />
+                  </div>
+                  <input
+                    type="text"
+                    class="pl-10 pr-4 py-3 border border-[#585858] text-sm w-full rounded-full"
+                    placeholder="Search for an event"
+                  />
+                </div>
+              </div>
+            </form>
+            <button>
+              <img src="./img/vwell.png" alt="" />
+            </button>
+          </div>
+          <div>
+            <div class="flex items-center justify-center px-9">
+  
+              <a href="#"
+                class="mr-[14px] border border-orange-500 text-gradient rounded-[30px] w-1/2 text-center text-sm font-normal text-white px-6 py-[10px]">
+                Calls
+              </a>
+              <a href="#"
+                class="mr-[14px] bg-gradient rounded-[30px] text-sm font-normal text-white w-1/2 px-6 py-[10px]">
+                Conferences
+              </a>
+  
+            </div>
+            <div class="flex flex-row gap-4 items-center justify-center px-[26px] pt-[17px] pb-[15px]">
+              <a href="#" class="rounded-[30px] border border-orange-500 text-[11px] font-semibold text-gradient px-2 py-1">
+                Finished
+              </a>
+              <a href="#"
+                class="rounded-[30px] bg-gradient text-[11px] font-semibold text-white px-2 py-1">
+                Upcoming
+              </a>
+  
+            </div>
+            <hr class="h-px my-[15px] mx-[25px] bg-[#E2E2E2] border-0 dark:bg-gray-700" />
+          </div>
+          <div class="flex flex-col h-screen">
+            <div
+              id="cards"
+              class="flex py-5 flex-col space-y-[28px] px-4 overflow-y-auto scrollbar-thumb-blue scrollbar-thumb-rounded scrollbar-track-blue-lighter scrollbar-w-2 scrolling-touch"
+            >
+              <div
+                class="card rounded-[40px] p-[30px] flex items-center flex-col"
+                style="box-shadow: 0px 2px 6px 0px #00000040"
+              >
+                <div class="pb-[20px]">
+                  <div class="flex items-center pb-[8px]">
+                    <img src="./img/icons 4.png" alt="" />
+                    <p class="pl-[5px] text-xs font-normal text-[#585858]">
+                      Organizer: Teacher’s name, Institute name
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <div class="flex items-center">
+                      <img src="./img/vdvd.png" alt="" />
+                      <p
+                        class="pl-[5px] text-xs font-normal text-[#585858] pr-[8px]"
+                      >
+                        Date: Thursday, 22.02.2024
+                      </p>
+                    </div>
+                    <div class="flex items-center">
+                      <img src="./img/TTTT.png" alt="" />
+                      <p class="pl-[5px] text-xs font-normal text-[#585858]">
+                        Time: 15 pm
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between mb-2">
+                  <a href="#" class="pr-[10px]">
+                    <img src="./img/Join.png" alt="" />
+                  </a>
+                </div>
+                <a href="#"><img src="./img/Cancel (1).png" alt="" /></a>
+                
+              </div>
+              <div
+                class="card rounded-[40px] p-[30px] mb-6 flex items-center flex-col"
+                style="box-shadow: 0px 2px 6px 0px #00000040"
+              >
+                <div class="pb-[20px]">
+                  <div class="flex items-center pb-[8px]">
+                    <img src="./img/icons 4.png" alt="" />
+                    <p class="pl-[5px] text-xs font-normal text-[#585858]">
+                      Organizer: Teacher’s name, Institute name
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <div class="flex items-center">
+                      <img src="./img/vdvd.png" alt="" />
+                      <p
+                        class="pl-[5px] text-xs font-normal text-[#585858] pr-[8px]"
+                      >
+                        Date: Thursday, 22.02.2024
+                      </p>
+                    </div>
+                    <div class="flex items-center">
+                      <img src="./img/TTTT.png" alt="" />
+                      <p class="pl-[5px] text-xs font-normal text-[#585858]">
+                        Time: 15 pm
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between mb-2">
+                  <a href="#" class="pr-[10px]">
+                    <img src="./img/Join.png" alt="" />
+                  </a>
+                  
+                </div>
+                <a href="#"><img src="./img/Cancel (1).png" alt="" /></a>
+                
+              </div>
+            </div>
+
+            <div
+              style="
+                background: linear-gradient(
+                  180deg,
+                  #ff6535 0%,
+                  #ff9e48 48.9%,
+                  #ffce58 100%
+                );
+              "
+              class="py-[10px] rounded-full mx-4 mb-6"
+            >
+              <div class="flex items-center justify-between px-[50px]">
+                <img src="./img/search.png" alt="">
+                <img src="./img/events.png" alt="" />
+            <img src="./img/chat-inactive.png" alt="" />
+            <img src="./img/dots-inactive.png" />
+              
+              </div>
+            </div>
+          </div>
+          <script>
+            const el = document.getElementById("cards");
+            el.scrollTop = el.scrollHeight;
+          </script>
+
+          <style>
+            .border-div {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              width: 208px;
+              height: 208px;
+              background: linear-gradient(
+                180deg,
+                #ff6535 0%,
+                #ff9e48 48.9%,
+                #ffce58 100%
+              );
+              border-radius: 50%;
+            }
+            .scrollbar-track-blue-lighter::-webkit-scrollbar-track {
+              --bg-opacity: 1;
+              background-color: #f7fafc;
+              background-color: rgba(247, 250, 252, var(--bg-opacity));
+            }
+
+            .scrollbar-thumb-blue::-webkit-scrollbar-thumb {
+              --bg-opacity: 1;
+              background-color: #edf2f7;
+              background-color: rgba(237, 242, 247, var(--bg-opacity));
+            }
+
+            .scrollbar-thumb-rounded::-webkit-scrollbar-thumb {
+              border-radius: 0.25rem;
+            }
+            select {
+              border-top: 1px solid #ff6535;
+              border-bottom: 1px solid #ffce58;
+              border-radius: 30px;
+              background: linear-gradient(
+                180deg,
+                #ff6535 0%,
+                #ff9e48 48.9%,
+                #ffce58 100%
+              );
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              font-size: 15px;
+              font-weight: 500;
+            }
+
+            .input-wrap {
+              background: linear-gradient(
+                180deg,
+                #ff6535 0%,
+                #ff9e48 48.9%,
+                #ffce58 100%
+              );
+            }
+          </style>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -99,7 +99,7 @@ th, td {
   width: 380px;
   position: fixed;
   bottom: 0;
-  margin-left: 10%;
+  /* margin-left: 10%; */
 }
 .student_status{
   font-family: Montserrat;
@@ -177,7 +177,8 @@ th, td {
 .sticky-bottom {
       position: fixed;
       bottom: 0;
-      left: 50%;
+      left: 0;
+      right: 0;
       transform: translateX(-50%);
       z-index: 1000; /* Adjust as needed */
     }
@@ -188,7 +189,7 @@ th, td {
         display: flex;
         align-items: center;
         gap: 20px;
-        margin-left: 10%;
+        /* margin-left: 10%; */
         border-radius: 20px;
         padding: 5px 10px;
         margin-bottom: 10px;
@@ -291,8 +292,8 @@ span {
     }
     .react-calendar {
   width: 450px;
-  height: 400px;
-  max-width: 100%;
+  /* height: 400px; */
+  max-width: 90%;
   background-color: #fff;
   color: #222;
   border-radius: 8px;
@@ -303,7 +304,7 @@ span {
 
 .react-calendar__month-view__weekdays {
   display: flex;
-  margin-left: 20px;
+  margin-left: 10px;
   justify-content: space-between;
 }
 
@@ -383,7 +384,7 @@ span {
                 </div>
             
         </div>
-        <div class="flex-col rounded-[50px] overflow-y-auto bg-white shadow-md mx-2 py-2 mb-2" style="max-height: calc(80vh - 200px);">
+        <div class="flex-col bg-white ml-2 py-2 mb-2" style="max-height: calc(80vh - 200px);">
           <!-- month name -->
           <div style="display: flex; justify-content: center; align-items: center; gap:68px;  margin-bottom: 10px;">
             <!-- <span style="color: #AFAFAF; font-weight: 600;">Today</span> -->
@@ -393,7 +394,7 @@ span {
           <!-- calendar -->
           <div class="flex justify-center items-center w-full">
     
-            <div class="react-calendar">
+            <div class="react-calendar ml-10 w-10/12">
               <div class="react-calendar__month-view__weekdays">
                 <span>Mo</span>
                 <span>Tu</span>
@@ -465,30 +466,30 @@ span {
                 <button class="inactive"><span>Conferences</span></button>
             </div>
         </div>
-        <div class="flex flex-col items-start" style="margin-top: 20px;margin-left: 10%;" >
+        <div class="flex flex-col items-start" style="margin-top: 20px;margin-left: 15%;" >
 
             <div id="short_date_form"></div>
             <span style="font-size: 13px;color: #AFAFAF;">Daily Tasks</span>
             
         </div>
-        <div class="flex justify-start" style="gap: 50px;margin-top: 10px; margin-left: 10%;">
+        <div class="flex justify-start" style="gap: 50px;margin-top: 10px; margin-left: 20%;">
           
          <!-- <div class="flex justify-center items-center" style="gap:10px;">
             <span style="color:#585858; font-size: 13px;">Share availability </span>
             <i class="bi bi-reply-fill" style="transform: rotateY(180deg); color:#585858; font-size: 20px;"></i>
           </div>-->
         </div>
-        <div style="height: 450px;margin-left: -2%;">
-            <div class="time_lines overflow-y-auto">
-                <div class="time_line ">
+        <div style="height: 450px;margin-left:10%;">
+            <div class="time_lines overflow-y-auto ml-2">
+                <div class="time_line w-[80%] mx-2">
                     <div class="available_time"> 8:00 </div>
                     <hr/>
                 </div> 
-                <div class="flex justify-center items-center bg-red-500 py-2  rounded-3xl gap-2 w-[60%] mb-2">
+                <div class="flex justify-center items-center bg-red-500 py-2  rounded-3xl gap-2 mx-2 w-[80%] mb-2">
                     <div class=" flex flex-row text-sm text-white ">09:00 - 10:00 </div>
                     <hr/>
                 </div> 
-                <div class="flex justify-center items-center bg-green-500 py-2  rounded-3xl gap-3 w-[60%] mb-2">
+                <div class="flex justify-center items-center bg-green-500 py-2  rounded-3xl gap-3 mx-2 w-[80%] mb-2">
                     <div class="flex flex-row text-sm text-white"> 11:00-12:00
                     </div>
                     <hr class="w-[100px] font-bold">
@@ -530,7 +531,7 @@ span {
             </div>
             
         </div>
-        <div class="relative z-50 flex justify-center">
+        <div class="flex items-center justify-center">
           <div
             style="
               background: linear-gradient(
