@@ -180,6 +180,7 @@ input:checked + .slider-orange:before {
     border-radius: var(--border-radius);
     outline: none; /* Remove default focus outline */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    text-align: center;
 }
 .button.active{
   background: linear-gradient(180deg, #ff6535 0%, #ff9e48 48.9%, #ffce58 100%);
@@ -241,12 +242,12 @@ input:checked + .slider-orange:before {
             <img src="./img/logo.png" alt="logo" />
           </div>
         </div>
-        <div style="display: flex;gap:5px; align-items: center;gap:10rem;margin-top: -75px;  margin-bottom: 10px;">
+        <div style="display: flex;align-items: center;justify-content: flex-start; gap: 60px; margin-top: -75px;  margin-bottom: 10px;">
             <div style="color: #AFAFAF;" >
                 <i class="bi bi-chevron-left"></i>
                 <span style="font-weight: 500;">Back</span>
             </div>
-            <span class="text-orange-400 font-bold">Availability</span> 
+            <span class="text-gradient font-bold text-center">Availability for Calls</span> 
            
         </div>
 
@@ -276,14 +277,23 @@ input:checked + .slider-orange:before {
                     <i class="bi bi-plus-lg custom-icon"></i>
                 </div>
             </div>
-            <div class="button mt-36 w-96 text-gray-500">
-              URL
+            <div class="flex items-center justify-between w-11/12 mt-5">
+              <span class="bg-white text-[#585858] px-4 py-2 rounded-full shadow-md w-8/12">Set Price</span>
+              <div class="flex items-center bg-gradient text-white px-3 py-2 rounded-full gap-2 w-3/12">
+                <span class="">$30</span>
+                <img src="./img/arrow down.png" alt="" class="w-[13px] h-[12px]">
+              </div>
             </div>
-            <div class="content-container">
+            <div class="button mt-8 w-11/12 text-[#a5a5a5]">
+              Call URL
+            </div>
+            <div class="content-container flex flex-col items-center justify-center gap-2 w-full">
               <div class="flex" style="gap:2rem">
                 <button class="button"><span>Cancel</span></button>
                 <button class="button active"><span>Done</span></button>
               </div>
+              <button class="button w-6/12 text-center"><span>Share</span></button>
+          
             </div>
         </div>
         
